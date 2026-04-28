@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FoodLogístic S.A. - Distribució i logística alimentària a nivell nacional amb seu a Mataró" />
+  <title>FoodLogístic S.A. | Logística Alimentària</title>
+
+  <style>
+    :root {
+      --color-primary: #2e7d32;
+      --color-secondary: #81c784;
+      --color-dark: #1b1b1b;
+      --color-light: #f9f9f9;
+      --font-main: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-main);
+      line-height: 1.6;
+      background-color: var(--color-light);
+      color: var(--color-dark);
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius: 0.5rem;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+      url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1400&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 4rem 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto 2rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    header h1 {
+      max-width: 1100px;
+      margin: 0 auto;
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+      display: grid;
+      gap: 4rem;
+    }
+
+    section h2 {
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .services article {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    label { font-weight: 600; }
+
+    input, textarea {
+      padding: 0.6rem;
+      border-radius: 0.4rem;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+
+    button {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: var(--color-secondary);
+    }
+
+    footer {
+      background-color: var(--color-dark);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav aria-label="Navegació principal">
+    <strong>FoodLogístic S.A.</strong>
+    <ul>
+      <li><a href="#inici">Inici</a></li>
+      <li><a href="#serveis">Serveis</a></li>
+      <li><a href="#nosaltres">Sobre nosaltres</a></li>
+      <li><a href="#contacte">Contacte</a></li>
+      <li><a href="avis.html">Avís Legal</a></li>
+      <li><a href="privacitat.html">Privacitat</a></li>
+      <li><a href="cookies.html">Cookies</a></li>
+    </ul>
+  </nav>
+
+  <h1>Experts en distribució i logística alimentària</h1>
+</header>
+
+<main>
+
+  <section id="inici">
+    <h2>Inici</h2>
+    <p>
+      FoodLogístic S.A. és una empresa capdavantera en la distribució i logística alimentària
+      a nivell nacional. Des de la nostra seu central a Mataró, garantim eficiència,
+      seguretat i puntualitat en cada enviament.
+    </p>
+  </section>
+
+  <section id="serveis" class="services">
+    <h2>Serveis</h2>
+    <div class="grid">
+
+      <article>
+        <img src="https://picsum.photos/400/250?food" alt="Distribució alimentària">
+        <h3>Distribució nacional</h3>
+        <p>Transport ràpid i segur de productes alimentaris a tot el territori.</p>
+      </article>
+
+      <article>
+        <img src="https://picsum.photos/400/251?warehouse" alt="Gestió de magatzem">
+        <h3>Gestió de magatzems</h3>
+        <p>Infraestructura moderna per a l’emmagatzematge i control del producte.</p>
+      </article>
+
+      <article>
+        <img src="https://picsum.photos/400/252?truck" alt="Logística refrigerada">
+        <h3>Logística refrigerada</h3>
+        <p>Solucions especialitzades per a productes que requereixen fred.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="nosaltres">
+    <h2>Sobre nosaltres</h2>
+    <p>
+      Amb anys d’experiència en el sector, FoodLogístic S.A. combina tecnologia,
+      sostenibilitat i coneixement expert per oferir solucions logístiques adaptades
+      a les necessitats dels nostres clients.
+    </p>
+  </section>
+
+  <section id="contacte">
+    <h2>Contacte</h2>
+
+    <form id="contactForm">
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+
+      <div>
+        <label for="email">Correu electrònic</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="telefon">Telèfon</label>
+        <input type="tel" id="telefon" name="telefon">
+      </div>
+
+      <div>
+        <label for="missatge">Missatge</label>
+        <textarea id="missatge" name="missatge" rows="4"></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+
+      <p style="font-size: 0.9rem;">
+        Consulta la nostra
+        <a href="privacitat.html">Política de Privacitat</a> i
+        <a href="avis.html">Avís Legal</a>.
+      </p>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 FoodLogístic S.A. · Mataró</p>
+  <p>
+    <a href="avis.html">Avís Legal</a> ·
+    <a href="privacitat.html">Privacitat</a> ·
+    <a href="cookies.html">Cookies</a>
+  </p>
+</footer>
+
+<!-- JS -->
+<script>
+  const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Gràcies pel teu missatge! Ens posarem en contacte aviat.');
+    form.reset();
+  });
+</script>
+
+<!-- Statcounter -->
+<script type="text/javascript">
+var sc_project=13214966;
+var sc_invisible=1;
+var sc_security="b81a04a2";
+</script>
+<!-- Default Statcounter code for FoodLogistic
+https://pauub.github.io/web-corporativa/ -->
+<script type="text/javascript">
+var sc_project=13214966; 
+var sc_invisible=1; 
+var sc_security="b81a04a2"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13214966/0/b81a04a2/1/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
